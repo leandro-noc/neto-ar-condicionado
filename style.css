@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto.otf') format(opentype);
+}
+
 :root {
     --cor0: #BBE8F2;
     --cor1: #6CC5D9;
@@ -20,13 +25,41 @@ body {
 }
 
 header {
-    height: 400px;
-    background: var(--cor0) url(imagens/banner-header.jpg) top left no-repeat fixed;
+    height: 1080px;
+    background: var(--cor0) url(imagens/banner-header.jpg) top center no-repeat fixed;
     background-size: cover;
 }
 
-header > p {
+header h1 {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 4em;
+    padding: 400px 0px 2px 0px;
+    font-weight: bolder;
+
+}
+
+header p {
     text-align: center;
+    font-family: 'Roboto',sans-serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: light;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 25px;
+
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    
+
 }
 
 main {
@@ -35,6 +68,7 @@ main {
     width: 1000px;
     padding: 10px;
     border-radius: 5px; 
+
 }
 
 h1 {
